@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&display=swap');
+
+.app-container{
+  height: 100svh;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-y: hidden;
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.navbar{
+  height: 10svh;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+
+.theme-regulator{
+  display: flex;
+}
+
+.navbar h1{
+  color: var(--base);
+  font-size: 2.5rem;
+}
+
+.navbar h1:hover{
+  cursor: pointer;
+}
+
+.user-name {
+  font-size: 1rem;
+  color: rgb(21, 21, 21);
+  text-transform: capitalize;
+  cursor: pointer;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--text-color);
+}

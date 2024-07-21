@@ -1,0 +1,27 @@
+.notes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45svw,1fr));
+    gap: 15px;
+    /* animation: slideUp .3s linear ; */
+    grid-auto-flow: dense; 
+}
+
+.empty-notes{
+  text-align: center;
+  font-weight: 400;
+  margin-top: 20px;
+  color: var(--text-color);
+}
+
+@media (min-width: 630px) {
+    .notes {
+      grid-template-columns:repeat(auto-fit, minmax(30svw, 1fr));
+    }
+  }
+  
+  /* For laptop screens */
+@media (min-width: 960px) {
+    .notes {
+      grid-template-columns: repeat(auto-fit, minmax(18svw, 1fr));
+    }
+}
